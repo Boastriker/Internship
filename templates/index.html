@@ -37,6 +37,66 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<style>
+ #content.container {
+ position: relative;
+ width: 50%;
+ }
+  #content img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+ }
+ #content .column{
+ float:left;
+ width:33.33%;
+ padding:5px;
+ }
+ #content .row::after{
+ content: "";
+ clear:both;
+ display:table;
+ }
+
+ #content .overlay {
+ position: absolute;
+ bottom: 100%;
+ left: 0;
+ right: 0;
+ background-color: transparent;
+ overflow: hidden;
+ width: 100%;
+
+ transition: background-color .5s ease;
+ border-radius:50%;
+ }
+ 
+ #content .overlay:hover {
+ bottom: 0;
+ height: 100%;
+ opacity: 0.4;
+  position: absolute;
+ bottom: 100%;
+ left: 0;
+ right: 0;
+ background-color: #008CBA;
+ overflow: hidden;
+ width: 100%;
+ transition: background-color .5s ease;
+ }
+ #content.text {
+ color: white;
+ font-size: 20px;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ text-align: center;
+ }
+
+  
+</style>
 
 </head>
 
@@ -276,7 +336,7 @@
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="icofont-earth"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <h4 class="title"><a href="">Sed ut persimgiatis</a></h4>
             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
@@ -456,61 +516,61 @@
 
     <!-- ======= Our Team Section ======= -->
     <section id="team" class="team">
-      <div class="container">
+      
 
         <div class="section-title">
           <h2>Our Team</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
         </div>
-        </div>
+        
     </section>
     <div id="content">
+      <!-- main container-->
       <div class="container">
         <div class="row sidebar-page">
           <!-- Page Content -->
             <div class="col-lg-12 page-content">
 
                 <!-- Classic Heading -->
-                <!--<h4 class="classic-title"><span>Our Specialists</span></h4>-->
+                <!--first image -->
                 <div class="col-lg-12 div-gap-padding">
-                    <div class="col-md-3">
+                  <div class="container">            
+                    <div class="column">
                         <div class="team">
-                            <div class="pic">
-                                <img src="/static/img/team/team-1.jpg" alt="">
-                                <div class="over-layer">
-                                    <p class="description">
-                                        MBBS, <br>General Physician
-                                    </p>
+                            <div class="img">
+                                <img src="/static/img/team/team-1.jpg" alt="" style="width: 200px;">
+                                <div class="overlay">
+                                  <div class="text"></div>
                                 </div>
                             </div>
                             <h3 class="team-prof">
                                 <a href="#">Dr. Pawan Kumar Kesari</a>
                             </h3>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="container">
+                    <div class="column">
                         <div class="team">
-                            <div class="pic">
-                                <img src="/static/img/team/team-2.jpg" alt="">
-                                <div class="over-layer">
-                                    <p class="description">
-                                        MBBS MD(Medicine)<br>General Physician
-                                    </p>
+                            <div class="img">
+                                <img src="/static/img/team/team-2.jpg" alt="" style="width: 200px;">
+                                <div class="overlay">
+                                  <div class="text"></div>
                                 </div>
                             </div>
                             <h3 class="team-prof">
                                 <a href="#">Dr. Nitin Kumar Srivastava </a>
                             </h3>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="container">
+                    <div class="column">
                         <div class="team">
-                            <div class="pic">
-                                <img src="/static/img/team/team-3.jpg" alt="">
-                                <div class="over-layer">
-                                    <p class="description">
-                                        MBBS<br>General Consultant and Diabetician 
-                                    </p>
+                            <div class="img">
+                                <img src="/static/img/team/team-3.jpg" alt="" style="width: 200px;">
+                                <div class="overlay">
+                                  <div class="text"></div>
                                 </div>
                             </div>
                             <h3 class="team-prof">
@@ -518,14 +578,14 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                  </div>
+                  <div class="container">
+                    <div class="column">
                         <div class="team">
-                            <div class="pic">
-                                <img src="/static/img/team/team-4.jpg" alt="">
-                                <div class="over-layer">
-                                    <p class="description">
-                                        MBBS, MD , DM<br>Cardiologist<br> (Doctor by <br> Cardia Care)
-                                    </p>
+                            <div class="img">
+                                <img src="/static/img/team/team-4.jpg" alt="" style="width: 200px;">
+                                <div class="overlay">
+                                  <div class="text"></div>
                                 </div>
                             </div>
                             <h3 class="team-prof">
@@ -533,18 +593,17 @@
                             </h3>
                         </div>
                     </div>
+                  </div>
 
                     <div class="col-lg-12 div-gap-padding">
 
-                        
-                        <div class="col-md-3">
+                        <div class="container">
+                        <div class="column">
                             <div class="team">
-                                <div class="pic">
-                                    <img src="/static/img/team/team-5.jpg" alt="">
-                                    <div class="over-layer">
-                                        <p class="description">
-                                            MBBS, MD, DM<br>Cardiologist <br> (Doctor by <br> Cardia Care)
-                                        </p>
+                                <div class="img">
+                                    <img src="/static/img/team/team-5.jpg" alt="" style="width: 200px;">
+                                    <div class="overlay">
+                                        <div class="text"></div>
                                     </div>
                                 </div>
                                 <h3 class="team-prof">
@@ -552,14 +611,14 @@
                                 </h3>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                      </div>
+                      <div class="container">
+                        <div class="column">
                             <div class="team">
-                                <div class="pic">
-                                    <img src="/static/img/team/team-6.jpg" alt="">
-                                    <div class="over-layer">
-                                        <p class="description">
-                                            MBBS , PGDCC<br>Cardiologist <br> (Doctor by <br> Cardia Care)
-                                        </p>
+                                <div class="img">
+                                    <img src="/static/img/team/team-6.jpg" alt="" style="width: 200px;">
+                                    <div class="overlay">
+                                      <div class="text"></div>
                                     </div>
                                 </div>
                                 <h3 class="team-prof">
@@ -567,14 +626,14 @@
                                 </h3>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                      </div>
+                      <div class="container">
+                        <div class="column">
                             <div class="team">
-                                <div class="pic">
-                                    <img src="/static/img/team/team-7.jpg" alt="">
-                                    <div class="over-layer">
-                                        <p class="description">
-                                            MBBS, MD, IDCCM<br>Cardiologist <br> (Doctor by <br> Cardia Care)
-                                        </p>
+                                <div class="img">
+                                    <img src="/static/img/team/team-7.jpg" alt="" style="width: 200px;">
+                                    <div class="overlay">
+                                      <div class="text"></div>
                                     </div>
                                 </div>
                                 <h3 class="team-prof">
@@ -582,14 +641,14 @@
                                 </h3>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                      </div>
+                      <div class="container">
+                        <div class="column">
                             <div class="team">
-                                <div class="pic">
-                                    <img src="/static/img/team/team-8.jpg" alt="">
-                                    <div class="over-layer">
-                                        <p class="description">
-                                            MBBS, DNB , Diabetologist 
-                                        </p>
+                                <div class="img">
+                                    <img src="/static/img/team/team-8.jpg" alt="" style="width: 200px;">
+                                    <div class="overlay">
+                                      <div class="text"></div>
                                     </div>
                                 </div>
                                 <h3 class="team-prof">
@@ -597,20 +656,19 @@
                                 </h3>
                             </div>
                         </div>
+                      </div>
 
 
 </div>
                     <div class="col-lg-12 div-gap-padding">
 
-
-                        <div class="col-md-3">
+                        <div class="container">
+                        <div class="column">
                             <div class="team">
-                                <div class="pic">
-                                    <img src="/static/img/team/team-9.jpg" alt="">
-                                    <div class="over-layer">
-                                        <p class="description">
-                                            MBBS<br>General Consultant
-                                        </p>
+                                <div class="img">
+                                    <img src="/static/img/team/team-9.jpg" alt="" style="width: 200px;">
+                                    <div class="overlay">
+                                      <div class="text"></div>
                                     </div>
                                 </div>
                                 <h3 class="team-prof">
@@ -618,6 +676,7 @@
                                 </h3>
                             </div>
                         </div>
+                      </div>
 
 
 
@@ -625,15 +684,13 @@
 
 
 
-
-                        <div class="col-md-3">
+                      <div class="container">
+                        <div class="column">
                             <div class="team">
-                                <div class="pic">
-                                    <img src="/static/img/team/team-10.jpg" alt="">
-                                    <div class="over-layer">
-                                        <p class="description">
-                                            MBBS DGO<br>Gynecologist
-                                        </p>
+                                <div class="img">
+                                    <img src="/static/img/team/team-10.jpg" alt="" style="width: 200px;">
+                                    <div class="overlay">
+                                        <div class="text"></div>
                                     </div>
                                 </div>
                                 <h3 class="team-prof">
@@ -641,6 +698,7 @@
                                 </h3>
                             </div>
                         </div>
+                      </div>
 
                        
             </div>
@@ -651,6 +709,10 @@
     
     <!-- End Content -->
   </div>
+  </div>
+</div>
+  </div>
+  
 
       
   
